@@ -21,7 +21,7 @@
   ],
   "readmeFilename": "README.md",
   "dependencies": {
-    "css-wrap": "^0.1.0",
+    "css-wrap": "https://github.com/roojay520/css-wrap",
     "gulp-util": "^3.0.6",
     "through2": "^2.0.0"
   },
