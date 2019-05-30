@@ -1,3 +1,7 @@
 .some-css-selector {
   background: green;
 }
+.skip-me {
+  font-size: 16px;
+  color: #333;
+}

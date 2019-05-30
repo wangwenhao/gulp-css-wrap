@@ -2,6 +2,11 @@
   background: green;
 }
 
+.skip-me {
+  font-size: 16px;
+  color: #333;
+}
+
 @media (min-width: 768px) {
   .my-app .some-css-selector {
     width: 750px;

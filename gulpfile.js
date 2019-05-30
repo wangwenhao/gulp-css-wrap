@@ -7,7 +7,7 @@ gulp.task('default', async () => {
   await gulp.src('demo/test.css')
     .pipe(cssWrap({
       selector: '.my-app',
-      skip: null,
+      skip: /^\.skip-me/,
       log: true,
     }))
     .pipe(rename({ suffix: '.scope' }))

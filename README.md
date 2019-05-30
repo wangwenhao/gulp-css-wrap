@@ -31,5 +31,5 @@ gulp.task('default', async () => {
 
 * pluginOptions
   * selector?: string, 符合 css 选择器格式的命名空间, 默认为 `.css-wrap`
-  * skip?: string, 需要跳过的 `css` 选择器, 默认为 `null`
+  * skip?: RegExp, 需要跳过的 `css` 选择器正则表达式, 默认为 `null`
   * log?: boolean, 是否显示日志, 默认为 `false`

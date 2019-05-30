@@ -16,7 +16,7 @@ describe('gulp-css-wrap', () => {
         contents: fs.readFileSync(filePath),
       });
 
-      const myCssWrap = cssWrap({ selector: '.my-app' });
+      const myCssWrap = cssWrap({ selector: '.my-app', skip: /^\.skip-me/ });
       myCssWrap.on('data', (file) => {
         const expextedFilePath = path.join(__dirname, 'expect', 'styles.css');
         assert.equal(file.contents.toString(), fs.readFileSync(expextedFilePath).toString().trim());
