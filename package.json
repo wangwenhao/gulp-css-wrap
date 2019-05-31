@@ -1,6 +1,6 @@
 {
   "name": "@feq/gulp-css-wrap",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Wrap CSS rules in a namespace",
   "main": "src/index.js",
   "repository": "https://github.com/roojay520/gulp-css-wrap.git",
