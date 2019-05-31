@@ -44,7 +44,10 @@ const cssWrap = (string, options = {}, filePath = ' ') => {
     try {
       string = fs.readFileSync(string).toString();
     } catch (error) {
-      if (log) log(chalk.yellow('css-wrap: Skipping empty file:'), filePath);
+      if (log) {
+        const fileName = path.basename(filePath);
+        log(`${chalk.yellow('css-wrap: skipping empty file ->')} ${fileName}\n`);
+      }
       return '';
     }
   }
