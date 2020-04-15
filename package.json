@@ -1,10 +1,10 @@
 {
-  "name": "@feq/gulp-css-wrap",
-  "version": "1.0.3",
+  "name": "@wwh/gulp-css-wrap",
+  "version": "1.0.0",
   "description": "Wrap CSS rules in a namespace",
   "main": "src/index.js",
-  "repository": "https://github.com/roojay520/gulp-css-wrap.git",
-  "author": "roojay <roojay520@gmail.com>",
+  "repository": "https://github.com/wangwenhao/gulp-css-wrap.git",
+  "author": "wwh27791 <wwh27791@ly.com>",
   "license": "MIT",
   "scripts": {
     "lint": "eslint src/*.js --fix",

@@ -25,7 +25,16 @@ const processRules = (list, options) => list.map((r) => {
   if (r.selectors) {
     r.selectors.forEach((s, index) => {
       if (options.skip && options.skip.test(s)) return;
-      const selector = options.selector ? `${options.selector} ${s}` : s;
+      let selector = options.selector
+      if (typeof selector === 'string') {
+        selector = options.selector ? `${options.selector} ${s}` : s;
+      } else {
+        let arr = []
+        options.selector.forEach(e => {
+          arr.push(`${e} ${s}`)
+        })
+        selector = arr.join(', ')
+      }
       r.selectors[index] = selector;
     });
   }
